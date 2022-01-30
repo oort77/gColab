@@ -17,3 +17,6 @@ data = pd.read_csv(gdown.download(url, output="../data/weatherAUS.zip",
 quiet=True), compression="zip")
 data.head()
 ```
+The script can be easily modified to deal with many more use cases.
+
+Examples of configuration files are located in config folder. Please check [PyDrive documentation](https://pythonhosted.org/PyDrive/oauth.html) on OAuth for details.
