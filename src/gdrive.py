@@ -84,8 +84,10 @@ data.head()'''
         print(file["id"], file["title"])
 
     except:
-        print('Usage: python gdrive.py')
-        pass
+        print('''
+              >>> cd path/to/archive/folder
+              >>> gdrive
+              ''')
 
 
 if __name__ == "__main__":
