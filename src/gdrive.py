@@ -90,16 +90,3 @@ data.head()'''
 
 if __name__ == "__main__":
     main()
-# %%
-# import tomli
-
-# secrets = "/Users/gm/Documents/python_scripts/gdrive/config/.secrets.toml"
-# with open(secrets, "rb") as f:
-#     secrets = tomli.load(f)
-
-# print(secrets)
-
-
-# # %%
-# secrets.keys()
-# %%
