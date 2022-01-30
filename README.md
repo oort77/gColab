@@ -24,11 +24,11 @@ Examples of configuration files are located in config folder. Please check [PyDr
 Install:  
 Clone repository to your computer, then
 ```
->>> pip install -e /path/to/src/folder
+$ pip install -e /path/to/src/folder
 ```
 
 Use:
 ```
->>> cd path/to/archive/folder
->>> gdrive
+$ cd path/to/archive/folder
+$ gdrive
 ```
