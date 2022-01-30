@@ -1,6 +1,6 @@
 ![numbers](https://user-images.githubusercontent.com/73858914/151681458-11de4950-b503-470f-8f8d-69cb4fb61035.png)
 # gColab
- Makes script for import of dataset archive to colab.   
+ Makes script for import of dataset archive to colab from Google Drive.   
 
 If you have a CSV dataset for a shared colab notebook, consider using this utility script.
 
