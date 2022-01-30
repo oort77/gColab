@@ -2,7 +2,7 @@
 # gColab
  Makes script for import of dataset archive to colab.   
 
-If you have a dataset for a shared colab notebook, please consider using this utility script.
+If you have a CSV dataset for a shared colab notebook, consider using this utility script.
 
 1. It uploads the most recently created zip archive to a specified Google Drive folder.
 2. Then it creates a snippet for insertion into your colab notebook. Just paste from the clipboard.
