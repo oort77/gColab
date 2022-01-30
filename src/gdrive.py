@@ -86,8 +86,8 @@ data.head()'''
     except:
         print('''
               Usage:
-              >>> cd path/to/archive/folder
-              >>> gdrive
+              $ cd path/to/archive/folder
+              $ gdrive
               ''')
 
 
