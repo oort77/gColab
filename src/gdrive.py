@@ -76,7 +76,7 @@ import gdown
 !mkdir ../data
 url = "https://drive.google.com/uc?export=download&id={file["id"]}"
 data = pd.read_csv(gdown.download(url, output="../data/{file["title"]}",  
-quiet=True), compression="zip")
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tquiet=True), compression="zip")
 data.head()'''
     # Place text on clipboard
         pc.copy(output)
