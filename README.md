@@ -21,7 +21,13 @@ The script can be easily modified to deal with many more use cases.
 
 Examples of configuration files are located in config folder. Please check [PyDrive documentation on OAuth](https://pythonhosted.org/PyDrive/oauth.html) for details.
 
-Installation:
+Install:
 ```
 pip install -e /path/to/src/folder
+```
+
+Use:
+```
+>>> cd path/to/archive/folder
+>>> gdrive
 ```
