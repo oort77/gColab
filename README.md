@@ -14,7 +14,7 @@ import gdown
 !mkdir ../data
 url = "https://drive.google.com/uc?export=download&id=1m17Q3tRRypU3ZrJhsxBKo4RXBkKqhTnO"
 data = pd.read_csv(gdown.download(url, output="../data/weatherAUS.zip",  
-quiet=True), compression="zip")
+                                  quiet=True), compression="zip")
 data.head()
 ```
 The script can be easily modified to deal with many more use cases.
