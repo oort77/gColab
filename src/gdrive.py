@@ -4,7 +4,6 @@
 #  Created by Gennady Matveev (gm@og.ly) on 30-01-2022.
 #  Copyright 2022. All rights reserved.
 
-# %%
 # Import libraries
 import os
 import os.path
@@ -12,27 +11,24 @@ import tomli
 import pyperclip as pc
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
-# %%
+
 # Import secrets
-import os
 script_path = os.path.realpath(__file__)
-secrets_toml = script_path.rsplit("/",2)[0]+"/config/.secrets.toml"
+secrets_toml = script_path.rsplit("/", 2)[0]+"/config/.secrets.toml"
 with open(secrets_toml, "rb") as f:
     secrets = tomli.load(f)
-# %%
+
 # Authorize with gDrive
 gauth = GoogleAuth(settings_file=secrets["settings_file"])
 GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = secrets["secrets_file"]
 GoogleAuth.DEFAULT_SETTINGS['save_credentials_file'] = secrets["save_credentials_file"]
 drive = GoogleDrive(gauth)
 
-# Dataset archives live in downloads:
+# Get current directory:
 work_dir = os.getcwd()
 
-# datasets folder in Google Drive
+# Datasets folder in Google Drive
 folder_id = secrets["folder_id"]
-# %%
-
 
 # Get list of zip files
 def file_info(dir_name: str):
@@ -64,7 +60,6 @@ def send_zip(dir_name: str):
                                         'value': 'anyone',
                                         'role': 'reader'})
     return gfile
-# %%
 
 
 def main():
