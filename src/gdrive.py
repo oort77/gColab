@@ -14,7 +14,6 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 # %%
 # Import secrets
-secrets_toml = "/Users/gm/Documents/python_scripts/gdrive/config/.secrets.toml"
 import os
 script_path = os.path.realpath(__file__)
 secrets_toml = script_path.rsplit("/",2)[0]+"/config/.secrets.toml"
@@ -28,7 +27,8 @@ GoogleAuth.DEFAULT_SETTINGS['save_credentials_file'] = secrets["save_credentials
 drive = GoogleDrive(gauth)
 
 # Dataset archives live in downloads:
-work_dir = secrets["work_dir"]
+work_dir = os.getcwd()
+
 # datasets folder in Google Drive
 folder_id = secrets["folder_id"]
 # %%
