@@ -4,7 +4,7 @@
 
 If you have a CSV dataset for a shared colab notebook, consider using this utility script.
 
-1. It uploads the most recently created zip archive from a preconfigured local directory to a specified Google Drive folder.
+1. It uploads the most recently created zip archive from current local directory to a specified Google Drive folder.
 2. Then it creates a snippet for insertion into your colab notebook. Just paste from the clipboard.
 
 That's it. The snippet looks like this:
