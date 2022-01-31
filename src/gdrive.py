@@ -6,10 +6,7 @@
 
 # %%
 # Import libraries
-import pandas as pd
-# import gdown
 import os
-# import sys
 import os.path
 import tomli
 import pyperclip as pc
@@ -18,6 +15,9 @@ from pydrive.drive import GoogleDrive
 # %%
 # Import secrets
 secrets_toml = "/Users/gm/Documents/python_scripts/gdrive/config/.secrets.toml"
+import os
+script_path = os.path.realpath(__file__)
+secrets_toml = script_path.rsplit("/",2)[0]+"/config/.secrets.toml"
 with open(secrets_toml, "rb") as f:
     secrets = tomli.load(f)
 # %%
